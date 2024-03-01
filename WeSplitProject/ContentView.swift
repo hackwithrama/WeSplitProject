@@ -33,7 +33,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
             Form{
-                Section("Enter the amount and number of people"){
+                Section("Enter the amount & number of people"){
                     TextField("Enter the amount", value: $amount, format: .currency(code: "INR"))
                         .keyboardType(.decimalPad)
                         .focused($amountIsFocused)
